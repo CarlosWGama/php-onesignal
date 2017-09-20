@@ -18,14 +18,14 @@ Nela haverá a opção de baixar o ID do APP e a Key da REST API
 Para usar esse projeto, basta baixar esse repositório em seu projeto e importar as classes em src/ ou usar o composer que é o mais indicado:
 
 ```
-composer require carloswgama/php-onesignal
+composer require carloswgama/php-onesignal:1.*
 ```
 
 Caso seu projeto já possua um arquivo composer.json, você pode também adiciona-lo nas dependências require e rodar um composer install:
 ```
 {
     "require": {
-        "carloswgama/php-onesignal"
+        "carloswgama/php-onesignal": "1.*"
     }
 }
 ```
