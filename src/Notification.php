@@ -100,8 +100,19 @@ class Notification {
             $this->campos['contents']['en'] = $contents;
         return $this;
     }
-
     
+    /**
+    * Seta um conteúdo adicional a ser recebido no destinatário
+    * @param $data array com as informações
+    * @return Notification
+    */
+    public function setAdditionalData(array $data) {
+        if($data && is_array($data)){
+            $this->campos['data'] = $data;
+        }
+        return $this;
+    }
+
     /**
     * Seta o título do conteúdo
     * @param $contents array com as informações
